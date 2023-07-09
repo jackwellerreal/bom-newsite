@@ -82,7 +82,7 @@ body {
     align-items: center;
     height: 100%;
     width: 90px;
-    background-color: var(--alert-warning-light);
+    background-color: var(--alert-warning-dark);
 }
 
 .alert-icon svg {
