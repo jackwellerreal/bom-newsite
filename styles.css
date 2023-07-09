@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --background: #ffffff;
+    --brand-main: #2461e5;
+    --brand-dark: #001f43;
+
+    --alert-warning: #ffd860;
+    --alert-warning-dark: #ffcb2d;
+
+    --footer: #f0eeeb;
+    --footer-dark: #cccccc;
+}
+
+body {
+    background-color: var(--background);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    background-color: var(--brand-main);
+    padding: 20px 40px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.header-logo-img {
+    height: 65px;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.header-menu-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    height: fit-content;
+    font-size: 1.25em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.header-menu-item svg {
+    height: 24px;
+    fill: var(--background);
+}
+
+.alert {
+    display: flex;
+    height: 90px;
+    background-color: var(--alert-warning);
+    color: var(--brand-dark);
+}
+
+.alert-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 90px;
+    background-color: var(--alert-warning-light);
+}
+
+.alert-icon svg {
+    height: 50%;
+    fill: var(--brand-dark);
+}
+
+.alert-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% - 90px);
+    padding: 10px;
+}
+
+.alert-text h2 {
+    width: fit-content;
+    font-size: 1.5em;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    letter-spacing: .6px;
+}
+
+.alert-text-states {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.alert-text-states a {
+    color: var(--brand-dark);
+    height: fit-content;
+    font-size: 1.25em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.main-body {
+    width: 75%;
+    min-height: calc(100vh - 210px);
+    margin: 40px auto;
+}
+
+.main-body-today {
+    height: 315px;
+}
+
+.footer {
+    background-color: var(--footer);
+    height: 315px;
+}
