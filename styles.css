@@ -130,6 +130,45 @@ body {
     height: 315px;
 }
 
+.main-body-today-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    height: calc(315px - calc(38px + 20px));
+    margin-top: 20px;
+}
+
+.main-body-today-item {
+    width: 100%;
+}
+
+.main-body-today-item h1 {
+    display: flex;
+    font-size: 4.5em;
+}
+
+.main-body-today-item h3 {
+    font-size: 1.5em;
+    color: #808080;
+}
+
+.today-more {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 24px;
+}
+
+.today-more-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.today-more-item h2 {
+    font-size: 2em;
+    height: fit-content;
+}
+
 .footer {
     background-color: var(--footer);
     height: 315px;
