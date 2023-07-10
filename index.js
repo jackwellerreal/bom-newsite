@@ -1,16 +1,16 @@
-getCity();
+setWeather();
 
-const date = moment();
-const currentDate = date.format("dddd D MMMM");
+const time = moment();
+const currentTime = time.format("HH:ss, dddd D MMMM");
 
-document.getElementById("today").innerHTML = currentDate;
+document.getElementById("today-time").innerHTML = currentTime;
+document.getElementById("today-city").innerHTML = "Brisbane";
 
-async function getCity() {
-    const cityres = await fetch(
-        "https://geolocation-db.com/json/"
+async function setWeather() {
+    const weatherres = await fetch(
+        "http://api.weatherapi.com/v1/current.json?key=&q=Brisbane&aqi=no"
     );
-    const city = await cityres.json();
+    const weather = await weatherres.json();
 
-    document.getElementById("today-temp").innerHTML = city.city;
+    document.getElementById("today-temp").innerHTML = `${weather.current.temp_c}°C`;
 }
-

@@ -130,6 +130,14 @@ body {
     height: 315px;
 }
 
+.main-body-today h1 {
+    font-size: 2rem;
+}
+
+.main-body-today-asof {
+    font-size: 1.5rem;
+}
+
 .main-body-today-content {
     display: grid;
     grid-template-columns: 1fr 3fr;
