@@ -127,7 +127,7 @@ body {
 }
 
 .main-body-today {
-    height: 315px;
+    height: calc(calc(315px * 2) + 40px);
 }
 
 .main-body-today h1 {
@@ -164,7 +164,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    column-gap: 24px;
+    column-gap: 48px;
 }
 
 .today-more-item {
@@ -175,6 +175,22 @@ body {
 .today-more-item h2 {
     font-size: 2em;
     height: fit-content;
+}
+
+.main-body-other {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 12px;
+    margin-top: 40px;
+    height: 315px;
+}
+
+.main-body-other-item h1 {
+    font-size: 3rem;
+}
+
+.main-body-other-item h3 {
+    font-size: 1.5rem;
 }
 
 .footer {
