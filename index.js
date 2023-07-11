@@ -1,4 +1,4 @@
-setTodayWeather("Brisbane"); // Make sure it has a Capital Letter at the start
+setTodayWeather("brisbane"); // Make sure it is all in lower case
 setTodayCities();
 
 const time = moment();
