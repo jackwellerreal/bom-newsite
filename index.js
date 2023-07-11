@@ -64,5 +64,11 @@ async function setTodayCities() {
         document.getElementById(
             `today-other-${city}-wind`
         ).innerHTML = `${weather.current.wind_kph}kph (${weather.current.wind_dir})`;
+        document.getElementById(
+            `today-other-${city}-condition`
+        ).innerHTML = weather.current.condition.text;
+        document.getElementById(
+            `today-other-${city}-precipitation`
+        ).innerHTML = `${weather.current.precip_mm}mm`;
     }
 }

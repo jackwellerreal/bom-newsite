@@ -189,11 +189,43 @@ body {
     font-size: 3rem;
 }
 
-.main-body-other-item h3 {
+.main-body-other-item h2 {
     font-size: 1.5rem;
 }
 
+.main-body-other-item h3 {
+    font-size: 1.25rem;
+}
+
 .footer {
+    color: #666;
     background-color: var(--footer);
-    height: 315px;
+    min-height: 315px;
+    padding: 40px calc(calc(100% - 75%) / 2);
+}
+
+.footer a {
+    color: #666;
+    text-decoration: underline
+}
+
+.footer-content {
+    text-align: center;
+    padding-bottom: 1.4em;
+}
+
+.footer-acknowledgement {
+    float: left;
+    clear: both;
+    width: 100%;
+    font-size: 14px;
+    border-top: 1px dotted #999;
+    padding-top: 1.4em;
+    text-align: center;
+}
+
+.footer-acknowledgement strong {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
 }
