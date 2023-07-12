@@ -1,17 +1,18 @@
 setTodayWeather("brisbane"); // Make sure it is all in lower case
 setTodayCities();
 
-const time = moment();
-const currentTime = time.format("HH:ss, dddd D MMMM");
-
-document.getElementById("today-time").innerHTML = currentTime;
-document.getElementById("today-city").innerHTML = "Brisbane";
-
 async function setTodayWeather(city) {
     const weatherres = await fetch(
         `https://what-question-mark.github.io/bom-newsite/data/${city}.json`
     );
     const weather = await weatherres.json();
+
+    // const time = moment();
+    const time = moment(weather.location.localtime, 'YYYY-MM-DD HH:ss');
+    const currentTime = time.format("HH:mm, dddd D MMMM");
+
+    document.getElementById("today-time").innerHTML = currentTime;
+    document.getElementById("today-city").innerHTML = "Brisbane";
 
     document.getElementById(
         "today-temp"

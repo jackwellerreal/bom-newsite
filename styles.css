@@ -201,7 +201,7 @@ body {
     color: #666;
     background-color: var(--footer);
     min-height: 315px;
-    padding: 40px calc(calc(100% - 75%) / 2);
+    padding: 20px calc(calc(100% - 75%) / 2);
 }
 
 .footer a {
@@ -209,9 +209,20 @@ body {
     text-decoration: underline
 }
 
-.footer-content {
+.footer-warning {
+    border-bottom: 1px dotted #999;
     text-align: center;
     padding-bottom: 1.4em;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1.4em 0;
+}
+
+.footer-content-item {
+
 }
 
 .footer-acknowledgement {
