@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
+    --color: #ffffff;
     --background: #ffffff;
+
     --brand-main: #2461e5;
     --brand-dark: #001f43;
 
@@ -57,7 +59,7 @@ body {
 .header-menu-item {
     display: flex;
     align-items: center;
-    color: white;
+    color: var(--color);
     height: fit-content;
     font-size: 1.25em;
     font-weight: 600;
@@ -120,25 +122,25 @@ body {
     text-decoration: none;
 }
 
-.main-body {
+.main {
     width: 75%;
     min-height: calc(100vh - 210px);
     margin: 40px auto;
 }
 
-.main-body-today {
-    height: calc(calc(315px * 2) + 40px);
+.main-today {
+    height: calc(calc(315px + 200px) + 40px);
 }
 
-.main-body-today h1 {
+.main-today h1 {
     font-size: 2rem;
 }
 
-.main-body-today-asof {
+.main-today-asof {
     font-size: 1.5rem;
 }
 
-.main-body-today-content {
+.main-today-content {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr;
@@ -146,16 +148,16 @@ body {
     margin-top: 20px;
 }
 
-.main-body-today-item {
+.main-today-item {
     width: 100%;
 }
 
-.main-body-today-item h1 {
+.main-today-item h1 {
     display: flex;
     font-size: 4.5em;
 }
 
-.main-body-today-item h3 {
+.main-today-item h3 {
     font-size: 1.5em;
     color: #808080;
 }
@@ -177,24 +179,50 @@ body {
     height: fit-content;
 }
 
-.main-body-other {
+.main-other {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     column-gap: 12px;
     margin-top: 40px;
-    height: 315px;
+    height: 200px;
 }
 
-.main-body-other-item h1 {
+.main-other-item h1 {
     font-size: 3rem;
 }
 
-.main-body-other-item h2 {
+.main-other-item h2 {
     font-size: 1.5rem;
 }
 
-.main-body-other-item h3 {
+.main-other-item h3 {
     font-size: 1.25rem;
+}
+
+.main-services {
+    margin-top: 40px;
+}
+
+.main-services-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 20px;
+    min-height: 315px;
+    margin-top: 20px;
+}
+
+.main-services-item {
+    padding: 20px;
+    background-color: var(--brand-main);
+    color: var(--color);
+    text-decoration: none;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.main-services-item h1 {
+    font-size: 24px;
 }
 
 .footer {
