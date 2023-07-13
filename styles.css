@@ -105,7 +105,7 @@ body {
     font-size: 1.5em;
     font-family: Montserrat, sans-serif;
     font-weight: 700;
-    letter-spacing: .6px;
+    letter-spacing: 0.6px;
 }
 
 .alert-text-states {
@@ -206,7 +206,7 @@ body {
 .main-services-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
     gap: 20px;
     min-height: 315px;
     margin-top: 20px;
@@ -225,6 +225,27 @@ body {
     font-size: 24px;
 }
 
+.main-promotion {
+    margin-top: 40px;
+}
+
+.main-promotion-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    min-height: 150px;
+    margin-top: 20px;
+}
+
+.main-promotion-item {
+    padding: 20px;
+    background-color: var(--brand-main);
+    color: var(--color);
+    text-decoration: none;
+    border-radius: 20px;
+    height: 100%;
+}
+
 .footer {
     color: #666;
     background-color: var(--footer);
@@ -234,10 +255,10 @@ body {
 
 .footer a {
     color: #666;
-    text-decoration: underline
+    fill: #666;
 }
 
-.footer-warning {
+.footer-disclaimer {
     border-bottom: 1px dotted #999;
     text-align: center;
     padding-bottom: 1.4em;
@@ -250,7 +271,7 @@ body {
 }
 
 .footer-content-item {
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .footer-acknowledgement {
@@ -261,6 +282,10 @@ body {
     border-top: 1px dotted #999;
     padding-top: 1.4em;
     text-align: center;
+}
+
+.footer-acknowledgement a {
+    text-decoration: underline;
 }
 
 .footer-acknowledgement strong {
