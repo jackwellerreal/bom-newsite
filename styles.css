@@ -3,6 +3,7 @@
 
 :root {
     --color: #ffffff;
+    --color-minor: #666;
     --background: #ffffff;
 
     --brand-main: #2461e5;
@@ -225,19 +226,21 @@ body {
     font-size: 24px;
 }
 
-.main-promotion {
+.main-more {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 40px;
 }
 
-.main-promotion-content {
+.main-more-content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     min-height: 150px;
     margin-top: 20px;
 }
 
-.main-promotion-item {
+.main-more-item {
     padding: 20px;
     background-color: var(--brand-main);
     color: var(--color);
@@ -246,20 +249,31 @@ body {
     height: 100%;
 }
 
+.main-more-content-item a {
+    font-size: 1.2rem;
+    color: var(--color-minor);
+    fill: var(--color-minor);
+}
+
+.main-more-content-item svg {
+    height: 1.2rem;
+    vertical-align: -0.125em
+}
+
 .footer {
-    color: #666;
+    color: var(--color-minor);
     background-color: var(--footer);
     min-height: 315px;
     padding: 20px calc(calc(100% - 75%) / 2);
 }
 
 .footer a {
-    color: #666;
-    fill: #666;
+    color: var(--color-minor);
+    fill: var(--color-minor);
 }
 
 .footer-disclaimer {
-    border-bottom: 1px dotted #999;
+    border-bottom: 1px dotted var(--color-minor);
     text-align: center;
     padding-bottom: 1.4em;
 }
@@ -279,7 +293,7 @@ body {
     clear: both;
     width: 100%;
     font-size: 14px;
-    border-top: 1px dotted #999;
+    border-top: 1px dotted var(--color-minor);
     padding-top: 1.4em;
     text-align: center;
 }
