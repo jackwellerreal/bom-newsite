@@ -271,13 +271,6 @@ body {
     color: var(--color-minor);
     fill: var(--color-minor);
 }
-
-.footer-disclaimer {
-    border-bottom: 1px dotted var(--color-minor);
-    text-align: center;
-    padding-bottom: 1.4em;
-}
-
 .footer-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
