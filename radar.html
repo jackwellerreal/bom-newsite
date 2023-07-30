@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BOM Redesign</title>
+    <meta name="description" content="A redesigned version of the BOM homepage">
+    <meta name="author" content="whatqm">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@whatqm">
+    <meta name="twitter:title" content="BOM Redesign">
+    <meta name="twitter:description" content="A redesigned version of the BOM homepage">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+</head>
+
+<body>
+    <a class="disclaimer" href="./disclaimer.html">
+        Disclaimer
+    </a>
+    <header class="header">
+        <a class="header-logo" href="https://what-question-mark.github.io/bom-newsite">
+            <img src="images/logo.png" alt="BOM Logo" class="header-logo-img">
+        </a>
+        <div class="header-menu">
+            <a href="./redirect.html" class="header-menu-item">NSW</a>
+            <a href="./redirect.html" class="header-menu-item">VIC</a>
+            <a href="./redirect.html" class="header-menu-item">QLD</a>
+            <a href="./redirect.html" class="header-menu-item">WA</a>
+            <a href="./redirect.html" class="header-menu-item">SA</a>
+            <a href="./redirect.html" class="header-menu-item">TAS</a>
+            <a href="./redirect.html" class="header-menu-item">ACT</a>
+            <a href="./redirect.html" class="header-menu-item">NT</a>
+            <a href="./redirect.html" class="header-menu-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
+                </svg>
+            </a>
+        </div>
+    </header>
+    <div class="main">
+        <h1>128 km Brisbane (Mt Stapylton) Radar</h1>
+        <h3>No warnings for Queensland</h3>
+        <div class="radar">
+            <div class="radar-main">
+                <div class="radar-main-image">
+                    <img src="images/radar.png">
+                </div>
+                <div class="radar-main-options">
+                    <div class="radar-main-options-item radar-main-options-controls">
+                        <h4>Radar controls</h4>
+                        <div class="radar-main-options-controls-content">
+                            <div class="radar-main-options-controls-content-time">
+                                <p>Frame: 1</p>
+                                <p>6:16 EST</p>
+                                <p>30/7/2023</p>
+                            </div>
+                            <div class="radar-main-options-controls-content-settings">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z" />
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M267.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160L64 241V96c0-17.7-14.3-32-32-32S0 78.3 0 96V416c0 17.7 14.3 32 32 32s32-14.3 32-32V271l11.5 9.6 192 160z" />
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4l192 160L256 241V96c0-17.7 14.3-32 32-32s32 14.3 32 32V416c0 17.7-14.3 32-32 32s-32-14.3-32-32V271l-11.5 9.6-192 160z" />
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M459.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4L288 214.3V256v41.7L459.5 440.6zM256 352V256 128 96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160C4.2 237.5 0 246.5 0 256s4.2 18.5 11.5 24.6l192 160c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V352z" />
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4L224 214.3V256v41.7L52.5 440.6zM256 352V256 128 96c0-12.4 7.2-23.7 18.4-29s24.5-3.6 34.1 4.4l192 160c7.3 6.1 11.5 15.1 11.5 24.6s-4.2 18.5-11.5 24.6l-192 160c-9.5 7.9-22.8 9.7-34.1 4.4s-18.4-16.6-18.4-29V352z" />
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M32 96l320 0V32c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l96 96c6 6 9.4 14.1 9.4 22.6s-3.4 16.6-9.4 22.6l-96 96c-9.2 9.2-22.9 11.9-34.9 6.9s-19.8-16.6-19.8-29.6V160L32 160c-17.7 0-32-14.3-32-32s14.3-32 32-32zM480 352c17.7 0 32 14.3 32 32s-14.3 32-32 32H160v64c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-96-96c-6-6-9.4-14.1-9.4-22.6s3.4-16.6 9.4-22.6l96-96c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 64H480z" />
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="radar-main-options-controls-content-nearby">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+                                    </svg>
+                                </button>
+                                <div></div>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="radar-main-options-item radar-main-options-features">
+                        <h4>Map features</h4>
+                        <div class="radar-main-options-features-content">
+                            <label>
+                                <input type="checkbox"> Weather observations
+                            </label>
+                            <label>
+                                <input type="checkbox"> River catchments
+                            </label>
+                            <label>
+                                <input type="checkbox" checked> Locations
+                            </label>
+                            <label>
+                                <input type="checkbox"> Forecast districts
+                            </label>
+                            <label>
+                                <input type="checkbox" checked> Range
+                            </label>
+                            <label>
+                                <input type="checkbox"> Roads
+                            </label>
+                            <label>
+                                <input type="checkbox" checked> Topography
+                            </label>
+                            <label>
+                                <input type="checkbox"> Railways
+                            </label>
+                            <label>
+                                <input type="checkbox"> Lakes & major rivers
+                            </label>
+                            <label>
+                                <input type="checkbox"> Nearby Radars
+                            </label>
+                        </div>
+                    </div>
+                    <div class="radar-main-options-item radar-main-options-pointer">
+                        <h4>Pointer data</h4>
+                        <p>Coming soon™</p>
+                    </div>
+                    <div class="radar-main-options-item radar-main-options-observations">
+                        <h4>Weather observations</h4>
+                        <p>Select "Weather Observations" in the "Map Features" below to display the observations here
+                            and on the radar map.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="radar-header">
+                <div class="radar-header-item">
+                    <div class="radar-header-types">
+                        <span>Loops</span>
+                        <a href="./redirect.html">Single Image</a>
+                        <a href="./redirect.html">Information</a>
+                        <a href="./redirect.html">Other Radars</a>
+                        <a href="./redirect.html">Help</a>
+                    </div>
+                </div>
+                <div class="radar-header-item">
+                    <div class="radar-header-zoom">
+                        <span>Radar</span>
+                        <a href="./redirect.html">64 km</a>
+                        <a href="./redirect.html">128 km</a>
+                        <a href="./redirect.html">256 km</a>
+                        <a href="./redirect.html">512 km</a>
+                        <a href="./redirect.html">National</a>
+                        <a href="./redirect.html">Doppler wind</a>
+                    </div>
+                    <div class="radar-header-time">
+                        <span>Rainfall</span>
+                        <a href="./redirect.html">5 min</a>
+                        <a href="./redirect.html">1 hour</a>
+                        <a href="./redirect.html">Since 9 am</a>
+                        <a href="./redirect.html">24 hour</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-item" style="border-right: 1px dotted var(--color-minor);">
+                <a class="footer-warnings" href="./redirect.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z" />
+                    </svg>
+                    <span>Warnings</span>
+                </a>
+                <div class="footer-three">
+                    <a href="./redirect.html">Water</a>
+                    <a href="./redirect.html"
+                        style="border-left: 1px dotted var(--color-minor);border-right: 1px dotted var(--color-minor);">Climate</a>
+                    <a href="./redirect.html">Enviroment</a>
+                </div>
+                <a href="./redirect.html">Tropical Cyclones</a>
+                <a href="./redirect.html">Tsunami Warning Centre</a>
+                <a href="./redirect.html">Agriculture - Water and the Land</a>
+                <a href="./redirect.html">Marine & Ocean</a>
+                <a href="./redirect.html">UV & Sun Protection</a>
+                <a href="./redirect.html">Rainfall & River Conditions</a>
+            </div>
+            <div class="footer-item" style="border-right: 1px dotted var(--color-minor);">
+                <div class="footer-maps">
+                    <a href="./redirect.html"><img src="./images/radar-sprite.png"><span>Radar</span></a>
+                    <a href="./redirect.html"><img src="./images/sat-sprite.png"><span>Satellite</span></a>
+                    <a href="./redirect.html"><img src="./images/maps-sprite.png"><span>Maps</span></a>
+                </div>
+                <a href="./redirect.html">Rainfall Forecasts</a>
+                <a href="./redirect.html">Seasonal Outlooks</a>
+                <a href="./redirect.html">Climate Variability & Change</a>
+                <a href="./redirect.html">Climate Data Online</a>
+                <a href="./redirect.html">Seasonal Streamflow Forecasts</a>
+                <a href="./redirect.html">Water Storage</a>
+            </div>
+            <div class="footer-item" style="border-right: 1px dotted var(--color-minor);">
+                <a class="footer-warnings" href="./redirect.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span>MetEye™</span>
+                </a>
+                <a href="./redirect.html">National Weather Services</a>
+                <a href="./redirect.html">Aviation Weather Services</a>
+                <a href="./redirect.html">Defence Services</a>
+                <a href="./redirect.html">Space Weather Services</a>
+                <a href="./redirect.html">Registered User Services</a>
+                <a href="./redirect.html">Industry Solutions</a>
+                <a href="./redirect.html">Supplier Entry Point</a>
+            </div>
+            <div class="footer-item">
+                <div class="footer-social">
+                    <a href="./redirect.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" />
+                        </svg>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="./redirect.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z" />
+                        </svg>
+                        <span>Twitter</span></a>
+                    <a href="./redirect.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z" />
+                        </svg>
+                        <span>Youtube</span></a>
+                    <a href="./redirect.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z" />
+                        </svg>
+                        <span>Instagram</span></a>
+                    <a href="./redirect.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M162.4 196c4.8-4.9 6.2-5.1 36.4-5.1 27.2 0 28.1.1 32.1 2.1 5.8 2.9 8.3 7 8.3 13.6 0 5.9-2.4 10-7.6 13.4-2.8 1.8-4.5 1.9-31.1 2.1-16.4.1-29.5-.2-31.5-.8-10.3-2.9-14.1-17.7-6.6-25.3zm61.4 94.5c-53.9 0-55.8.2-60.2 4.1-3.5 3.1-5.7 9.4-5.1 13.9.7 4.7 4.8 10.1 9.2 12 2.2 1 14.1 1.7 56.3 1.2l47.9-.6 9.2-1.5c9-5.1 10.5-17.4 3.1-24.4-5.3-4.7-5-4.7-60.4-4.7zm223.4 130.1c-3.5 28.4-23 50.4-51.1 57.5-7.2 1.8-9.7 1.9-172.9 1.8-157.8 0-165.9-.1-172-1.8-8.4-2.2-15.6-5.5-22.3-10-5.6-3.8-13.9-11.8-17-16.4-3.8-5.6-8.2-15.3-10-22C.1 423 0 420.3 0 256.3 0 93.2 0 89.7 1.8 82.6 8.1 57.9 27.7 39 53 33.4c7.3-1.6 332.1-1.9 340-.3 21.2 4.3 37.9 17.1 47.6 36.4 7.7 15.3 7-1.5 7.3 180.6.2 115.8 0 164.5-.7 170.5zm-85.4-185.2c-1.1-5-4.2-9.6-7.7-11.5-1.1-.6-8-1.3-15.5-1.7-12.4-.6-13.8-.8-17.8-3.1-6.2-3.6-7.9-7.6-8-18.3 0-20.4-8.5-39.4-25.3-56.5-12-12.2-25.3-20.5-40.6-25.1-3.6-1.1-11.8-1.5-39.2-1.8-42.9-.5-52.5.4-67.1 6.2-27 10.7-46.3 33.4-53.4 62.4-1.3 5.4-1.6 14.2-1.9 64.3-.4 62.8 0 72.1 4 84.5 9.7 30.7 37.1 53.4 64.6 58.4 9.2 1.7 122.2 2.1 133.7.5 20.1-2.7 35.9-10.8 50.7-25.9 10.7-10.9 17.4-22.8 21.8-38.5 3.2-10.9 2.9-88.4 1.7-93.9z" />
+                        </svg>
+                        <span>Blog</span></a>
+                    <a href="./redirect.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM96 136c0-13.3 10.7-24 24-24c137 0 248 111 248 248c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-110.5-89.5-200-200-200c-13.3 0-24-10.7-24-24zm0 96c0-13.3 10.7-24 24-24c83.9 0 152 68.1 152 152c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-57.4-46.6-104-104-104c-13.3 0-24-10.7-24-24zm0 120a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                        </svg>
+                        <span>RSS</span></a>
+                </div>
+                <div class="footer-three">
+                    <a href="./redirect.html">Careers</a>
+                    <a href="./redirect.html"
+                        style="border-left: 1px dotted var(--color-minor);border-right: 1px dotted var(--color-minor);">Sitemap</a>
+                    <a href="./redirect.html">Feedback</a>
+                </div>
+                <a href="./redirect.html">Freedom of Information</a>
+                <a href="./redirect.html">Indigenous Weather Knowledge</a>
+                <a href="./redirect.html">Glossary</a>
+                <a href="./redirect.html">Students and Teachers</a>
+            </div>
+        </div>
+        <p class="footer-acknowledgement">
+            <strong>
+                The Bureau of Meteorology acknowledges the traditional custodians of Australia. We pay our respects
+                to
+                Elders past, present and future, of all Aboriginal and Torres Strait Islander nations.</strong>
+            <br><br>
+            © <a href="./redirect.html">Copyright</a> Commonwealth of Australia 2023, Bureau of Meteorology (ABN 92 637
+            533
+            532) | CRICOS Provider
+            02015K | <a href="./redirect.html">Disclaimer</a> | <a href="./redirect.html">Privacy</a> | <a
+                href="./redirect.html">Accessibility</a>
+        </p>
+    </footer>
+</body>
+
+</html>

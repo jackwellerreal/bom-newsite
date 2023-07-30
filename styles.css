@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
-    --color: #ffffff;
+    --color: #000000;
     --color-minor: #666;
     --background: #ffffff;
+    --color-header: #ffffff;
 
     --brand-main: #2461e5;
     --brand-dark: #001f43;
@@ -14,6 +15,9 @@
 
     --footer: #f0eeeb;
     --footer-dark: #cccccc;
+
+    --border-radius-small: 10px;
+    --border-radius-big: 20px;
 }
 
 body {
@@ -25,6 +29,21 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
+}
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    -ms-user-drag: none;
 }
 
 .header {
@@ -60,7 +79,7 @@ body {
 .header-menu-item {
     display: flex;
     align-items: center;
-    color: var(--color);
+    color: var(--color-header);
     height: fit-content;
     font-size: 1.25em;
     font-weight: 600;
@@ -125,7 +144,7 @@ body {
 
 .main {
     width: 75%;
-    min-height: calc(calc(100vh - 105px) - 40px);
+    min-height: calc(calc(100vh - 105px) - 80px);
     margin: 40px auto;
 }
 
@@ -216,9 +235,9 @@ body {
 .main-services-item {
     padding: 20px;
     background-color: var(--brand-main);
-    color: var(--color);
+    color: var(--color-header);
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: var(--border-radius-big);
     height: 100%;
 }
 
@@ -240,15 +259,6 @@ body {
     margin-top: 20px;
 }
 
-.main-more-item {
-    padding: 20px;
-    background-color: var(--brand-main);
-    color: var(--color);
-    text-decoration: none;
-    border-radius: 20px;
-    height: 100%;
-}
-
 .main-more-content-item a {
     font-size: 1.2rem;
     color: var(--color-minor);
@@ -257,7 +267,7 @@ body {
 
 .main-more-content-item svg {
     height: 1.2rem;
-    vertical-align: -0.125em
+    vertical-align: -0.125em;
 }
 
 .footer {
@@ -312,7 +322,7 @@ body {
 }
 
 .footer-warnings svg {
-    height: 18px;
+    height: 14px;
     vertical-align: -0.125em;
 }
 
@@ -354,8 +364,8 @@ body {
 }
 
 .footer-social svg {
-    height: 18px;
-    vertical-align: -0.125em
+    height: 14px;
+    vertical-align: -0.125em;
 }
 
 .footer-social span {
@@ -393,4 +403,159 @@ body {
 
 .disclaimer:hover {
     text-decoration: underline;
+}
+
+/* radar */
+
+.radar {
+    margin-top: 1em;
+    min-height: calc(calc(calc(100vh - 105px) - 80px) - 4.17em);
+}
+
+.radar-header a,
+.radar-header p,
+.radar-header span {
+    text-align: center;
+    color: var(--color);
+    fill: var(--color);
+    padding: 8px;
+}
+
+.radar-header span {
+    font-weight: 600;
+}
+
+.radar-header-item {
+    border-radius: var(--border-radius-small);
+    background-color: var(--footer);
+    margin-top: 1em;
+}
+
+.radar-header-types {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+}
+
+.radar-header-zoom,
+.radar-header-time {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+}
+
+.radar-main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2.5%;
+    height: fit-content;
+}
+
+.radar-main-options {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 3fr 2fr;
+    gap: 2.5%;
+}
+
+.radar-main-options-features-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: calc(calc(100% - 1.33em) + 8px);
+}
+
+.radar-main-options-controls-content-time {
+    margin-bottom: 8px;
+}
+
+.radar-main-options-controls-content-settings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.radar-main-options-controls-content-settings button {
+    width: fit-content;
+    height: 24px;
+    margin: 4px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.radar-main-options-controls-content-settings svg {
+    height: 100%;
+}
+
+.radar-main-options-controls-content-settings button:nth-child(even) {
+    margin-right: auto;
+}
+
+.radar-main-options-controls-content-settings button:nth-child(odd) {
+    margin-left: auto;
+}
+
+.radar-main-options-controls-content-nearby {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: min-content;
+    margin: 8px auto;
+}
+
+.radar-main-options-controls-content-nearby button {
+    aspect-ratio: 1/1;
+    height: 24px;
+    padding: 4px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.radar-main-options-controls-content-nearby button:nth-child(1) {
+    transform: rotate(-45deg);
+}
+
+.radar-main-options-controls-content-nearby button:nth-child(3) {
+    transform: rotate(45deg);
+}
+
+.radar-main-options-controls-content-nearby button:nth-child(4) {
+    transform: rotate(-90deg);
+}
+
+.radar-main-options-controls-content-nearby button:nth-child(6) {
+    transform: rotate(90deg);
+}
+
+.radar-main-options-controls-content-nearby button:nth-child(7) {
+    transform: rotate(-135deg);
+}
+
+.radar-main-options-controls-content-nearby button:nth-child(8) {
+    transform: rotate(180deg);
+}
+
+.radar-main-options-controls-content-nearby button:nth-child(9) {
+    transform: rotate(135deg);
+}
+
+.radar-main-options-controls p {
+    text-align: center;
+}
+
+.radar-main-options-observations p {
+    text-align: center;
+}
+
+.radar-main-options-item {
+    border-radius: var(--border-radius-small);
+    background-color: var(--footer);
+    padding: 10px;
+}
+
+.radar-main-options-item h4 {
+    margin-bottom: 8px;
 }
