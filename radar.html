@@ -18,6 +18,24 @@
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function () {
+            const radar = document.getElementById('radar-image')
+            function updateMouseCoordinates(event) {
+                const rect = radar.getBoundingClientRect();
+
+                const x = (Math.round(event.clientX - rect.left)) - 262;
+                const y = (Math.round(event.clientY - rect.top) > 512 ? "512" : Math.round(event.clientY - rect.top)) - 262;
+
+                globalMousePos = { x: x, y: y };
+
+                document.getElementById("pointer-x").innerHTML = `X: ${globalMousePos.x}`;
+                document.getElementById("pointer-y").innerHTML = `Y: ${globalMousePos.y}`;
+            }
+            radar.addEventListener('mousemove', updateMouseCoordinates);
+        });
+    </script>
 </head>
 
 <body>
@@ -52,11 +70,10 @@
         <div class="radar">
             <div class="radar-main">
                 <div class="radar-main-image">
-                    <img src="images/radar.png">
+                    <img src="images/radar.png" id="radar-image">
                 </div>
                 <div class="radar-main-options">
                     <div class="radar-main-options-item radar-main-options-controls">
-                        <h4>Radar controls</h4>
                         <div class="radar-main-options-controls-content">
                             <div class="radar-main-options-controls-content-time">
                                 <p>Frame: 1</p>
@@ -220,7 +237,8 @@
                     </div>
                     <div class="radar-main-options-item radar-main-options-pointer">
                         <h4>Pointer data</h4>
-                        <p>Coming soon™</p>
+                        <p id="pointer-x"></p>
+                        <p id="pointer-y"></p>
                     </div>
                     <div class="radar-main-options-item radar-main-options-observations">
                         <h4>Weather observations</h4>
