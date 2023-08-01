@@ -26,12 +26,25 @@
                 const rect = radar.getBoundingClientRect();
 
                 const x = (Math.round(event.clientX - rect.left)) - 262;
-                const y = (Math.round(event.clientY - rect.top) > 512 ? "512" : Math.round(event.clientY - rect.top)) - 262;
+                const y = ((Math.round(event.clientY - rect.top) > 512 ? "512" : Math.round(event.clientY - rect.top)) - 262) * -1;
 
                 globalMousePos = { x: x, y: y };
 
-                document.getElementById("pointer-x").innerHTML = `X: ${globalMousePos.x}`;
-                document.getElementById("pointer-y").innerHTML = `Y: ${globalMousePos.y}`;
+                document.getElementById("pointer-x").innerHTML = `${Math.round((globalMousePos.x) / 2) < 0 ?
+                    Math.round((globalMousePos.x) / 2) * -1 :
+                    Math.round((globalMousePos.x) / 2)
+                    } km ${Math.round((globalMousePos.x) / 2) > 0 ?
+                        "East" :
+                        "West"}
+                    `;
+
+                document.getElementById("pointer-y").innerHTML = `${Math.round((globalMousePos.y) / 2) < 0 ?
+                    Math.round((globalMousePos.y) / 2) * -1 :
+                    Math.round((globalMousePos.y) / 2)
+                    } km ${Math.round((globalMousePos.y) / 2) > 0 ?
+                        "North" :
+                        "South"
+                    }`;
             }
             radar.addEventListener('mousemove', updateMouseCoordinates);
         });
