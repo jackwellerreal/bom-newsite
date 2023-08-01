@@ -1,3 +1,7 @@
+/*
+This is a redesign concept made by @what-question-mark on Github
+*/
+
 setTodayWeather("brisbane"); // Make sure it is all in lower case
 setTodayCities();
 

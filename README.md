@@ -1,2 +1,2 @@
-# bom-newsite
- New BOM site mock up
+# BOM Redesign Concept
+New BOM site mock up
