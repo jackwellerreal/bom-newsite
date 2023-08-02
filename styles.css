@@ -107,7 +107,7 @@ img {
     display: none;
     position: absolute;
     top: 52px;
-    padding: 8px;
+    padding: 16px;
     border-radius: var(--border-radius-small);
     background-color: var(--brand-dark);
     min-width: max-content;
