@@ -7,7 +7,7 @@ setTodayCities();
 
 async function setTodayWeather(city) {
     const weatherres = await fetch(
-        `https://what-question-mark.github.io/bom-newsite/data/${city}.json`
+        `https://jackwellerreal.github.io/bom-newsite/data/${city}.json`
     );
     const weather = await weatherres.json();
 
