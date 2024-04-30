@@ -8,6 +8,7 @@ This is a redesign concept made by @what-question-mark on Github
 :root {
     --color: #000000;
     --color-minor: #666;
+    --color-minor2: #cccccc;
     --background: #ffffff;
     --color-header: #ffffff;
 
@@ -159,7 +160,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
     width: calc(100% - 90px);
-    padding: 10px;
+    padding: 10px 25px;
 }
 
 .alert-text h2 {
@@ -214,6 +215,17 @@ img {
     width: 100%;
 }
 
+.today-temp {
+    
+    padding: 8px;
+    border-radius: var(--border-radius-big);
+    transition: ease 0.25s;
+}
+
+.today-temp:hover {
+    background-color: var(--color-minor2);
+}
+
 .main-today-item h1 {
     display: flex;
     font-size: 4.5em;
@@ -234,6 +246,13 @@ img {
 .today-more-item {
     display: flex;
     justify-content: space-between;
+    padding: 8px;
+    border-radius: var(--border-radius-big);
+    transition: ease 0.25s;
+}
+
+.today-more-item:hover {
+    background-color: var(--color-minor2);
 }
 
 .today-more-item h2 {
@@ -247,6 +266,16 @@ img {
     column-gap: 12px;
     margin-top: 40px;
     height: 200px;
+}
+
+.main-other-item {
+    padding: 8px;
+    border-radius: var(--border-radius-big);
+    transition: ease 0.25s;
+}
+
+.main-other-item:hover {
+    background-color: var(--color-minor2);
 }
 
 .main-other-item h1 {
@@ -275,12 +304,17 @@ img {
 }
 
 .main-services-item {
+    height: 100%;
     padding: 20px;
     background-color: var(--brand-main);
     color: var(--color-header);
     text-decoration: none;
     border-radius: var(--border-radius-big);
-    height: 100%;
+    transition: ease 0.25s;
+}
+
+.main-services-item:hover {
+    background-color: var(--brand-dark);
 }
 
 .main-services-item h1 {
