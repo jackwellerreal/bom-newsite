@@ -209,6 +209,7 @@ img {
     grid-template-rows: 1fr;
     height: calc(315px - calc(38px + 20px));
     margin-top: 20px;
+    column-gap: 48px;
 }
 
 .main-today-item {
