@@ -6,23 +6,52 @@ This is a redesign concept made by @what-question-mark on Github
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
-    --color: #000000;
-    --color-minor: #666;
-    --color-minor2: #cccccc;
-    --background: #ffffff;
-    --color-header: #ffffff;
-
-    --brand-main: #2461e5;
-    --brand-dark: #001f43;
-
-    --alert-warning: #ffd860;
-    --alert-warning-dark: #ffcb2d;
-
-    --footer: #f0eeeb;
-    --footer-dark: #cccccc;
-
     --border-radius-small: 10px;
-    --border-radius-big: 20px;
+    --border-radius-big: 10px;
+
+    --transition: ease 0.25s;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color: #000000;
+        --color-minor: #666666;
+        --color-minor2: #cccccc;
+        --color-header: #ffffff;
+
+        --background: #ffffff;
+    
+        --brand-main: #2461e5;
+        --brand-dark: #001f43;
+    
+        --alert-warning: #ffd860;
+        --alert-warning-dark: #ffcb2d;
+        --alert-warning-text: #001f43;
+    
+        --footer: #f0eeeb;
+        --footer-dark: #cccccc;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color: #ffffff;
+        --color-minor: #999999;
+        --color-minor2: #333333;
+        --color-header: #000000;
+
+        --background: #000000;
+    
+        --brand-main: #001f43;
+        --brand-dark: #2461e5;
+    
+        --alert-warning: #ffcb2d;
+        --alert-warning-dark: #ffd860;
+        --alert-warning-text: #001f43;
+    
+        --footer: #0f1114;
+        --footer-dark: #333333;
+    }
 }
 
 body {
@@ -34,6 +63,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
+    color: var(--color)
 }
 
 img {
@@ -90,7 +120,7 @@ img {
 
 .header-menu-item a {
     padding: 24px 0;
-    color: var(--color-header);
+    color: #fff;
     font-size: 1.25em;
     font-weight: 600;
     text-decoration: none;
@@ -131,14 +161,14 @@ img {
 
 .header-menu-item svg {
     height: 24px;
-    fill: var(--background);
+    fill: #fff;
 }
 
 .alert {
     display: flex;
     height: 90px;
     background-color: var(--alert-warning);
-    color: var(--brand-dark);
+    color: var(--alert-warning-text);
 }
 
 .alert-icon {
@@ -152,7 +182,7 @@ img {
 
 .alert-icon svg {
     height: 50%;
-    fill: var(--brand-dark);
+    fill: var(--alert-warning-text);
 }
 
 .alert-text {
@@ -169,20 +199,20 @@ img {
     font-family: Montserrat, sans-serif;
     font-weight: 700;
     letter-spacing: 0.6px;
+    color: var(--alert-warning-text);
 }
 
 .alert-text-states {
     display: flex;
-    justify-content: space-between;
-    width: 30%;
 }
 
 .alert-text-states a {
-    color: var(--brand-dark);
+    color: var(--alert-warning-text);
     height: fit-content;
     font-size: 1.25em;
     font-weight: 600;
     text-decoration: none;
+    margin-right: 1em;
 }
 
 .main {
@@ -217,10 +247,9 @@ img {
 }
 
 .today-temp {
-    
     padding: 8px;
     border-radius: var(--border-radius-big);
-    transition: ease 0.25s;
+    transition: var(--transition);
 }
 
 .today-temp:hover {
@@ -249,7 +278,7 @@ img {
     justify-content: space-between;
     padding: 8px;
     border-radius: var(--border-radius-big);
-    transition: ease 0.25s;
+    transition: var(--transition);
 }
 
 .today-more-item:hover {
@@ -272,7 +301,7 @@ img {
 .main-other-item {
     padding: 8px;
     border-radius: var(--border-radius-big);
-    transition: ease 0.25s;
+    transition:  var(--transition);
 }
 
 .main-other-item:hover {
@@ -311,7 +340,7 @@ img {
     color: var(--color-header);
     text-decoration: none;
     border-radius: var(--border-radius-big);
-    transition: ease 0.25s;
+    transition: var(--transition);
 }
 
 .main-services-item:hover {
