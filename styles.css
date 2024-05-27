@@ -45,12 +45,15 @@ This is a redesign concept made by @what-question-mark on Github
         --brand-main: #001f43;
         --brand-dark: #2461e5;
     
-        --alert-warning: #ffcb2d;
-        --alert-warning-dark: #ffd860;
+        --alert-warning: #d6a200;
+        --alert-warning-dark: #b48700;
         --alert-warning-text: #001f43;
     
         --footer: #0f1114;
         --footer-dark: #333333;
+    }
+    .footer-maps img {
+        filter: invert(1);
     }
 }
 
@@ -349,6 +352,7 @@ img {
 
 .main-services-item h1 {
     font-size: 24px;
+    color: #fff;    
 }
 
 .main-more {
@@ -384,9 +388,14 @@ img {
 }
 
 .footer a {
-    color: var(--color-minor);
-    fill: var(--color-minor);
+    color: var(--color-minor) !important;
+    fill: var(--color-minor) !important;
 }
+
+.footer a span {
+    color: var(--color-minor) !important;
+}
+
 .footer-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -500,7 +509,7 @@ img {
 
 .disclaimer {
     position: fixed;
-    color: #000;
+    color: var(--color);
     font-weight: 600;
     text-decoration: none;
     bottom: 8px;
