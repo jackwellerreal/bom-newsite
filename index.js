@@ -7,7 +7,7 @@ setTodayCities();
 
 async function setTodayWeather(city) {
     const weatherres = await fetch(
-        `https://jackwellerreal.github.io/bom-newsite/data/${city}.json`
+        `./data/${city}.json`
     );
     const weather = await weatherres.json();
 
@@ -59,7 +59,7 @@ async function setTodayCities() {
 
     for (let city of cities) {
         const weatherres = await fetch(
-            `https://jackwellerreal.github.io/bom-newsite/data/${city}.json`
+            `./data/${city}.json`
         );
         const weather = await weatherres.json();
 

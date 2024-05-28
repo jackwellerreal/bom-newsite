@@ -84,6 +84,22 @@ img {
     -ms-user-drag: none;
 }
 
+button {
+	background: var(--brand-main);
+    color: #ffffff;
+    margin-top: 16px;
+    padding: 8px;
+    border-radius: var(--border-radius-small);
+	cursor: pointer;
+	border: none;
+	outline: inherit;
+    transition: var(--transition);
+}
+
+button:hover {
+    background: var(--brand-dark);
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -491,12 +507,14 @@ img {
     clear: both;
     width: 100%;
     font-size: 14px;
-    border-top: 1px dotted var(--color-minor);
+    border-top: 1px dotted var(--color-minor) !important;
     padding-top: 1.4em;
     text-align: center;
+    color: var(--color) !important;
 }
 
 .footer-acknowledgement a {
+    color: var(--color) !important;
     text-decoration: underline;
 }
 
@@ -518,6 +536,12 @@ img {
 
 .disclaimer:hover {
     text-decoration: underline;
+}
+
+/* 404 */
+
+.not-found-header {
+    font-size: 4.5em;
 }
 
 /* radar */
