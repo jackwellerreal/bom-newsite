@@ -118,7 +118,7 @@ button:hover {
 }
 
 .header-logo-img {
-    height: 65px;
+    height: 55px;
 }
 
 .header-menu {
@@ -136,7 +136,6 @@ button:hover {
 }
 
 .header-menu-item a {
-    padding: 24px 0;
     color: #fff;
     font-size: 1.25em;
     font-weight: 600;
@@ -145,35 +144,6 @@ button:hover {
 
 .header-menu-item a:hover {
     text-decoration: underline;
-}
-
-.header-menu-item:hover .header-menu-item-dropdown {
-    display: block;
-}
-
-.header-menu-item-dropdown {
-    display: none;
-    position: absolute;
-    top: 52px;
-    padding: 16px;
-    border-radius: var(--border-radius-small);
-    background-color: var(--brand-dark);
-    min-width: max-content;
-    z-index: 10;
-}
-
-.header-menu-item-dropdown:not(.dropdown-end) {
-    left: -32px;
-}
-
-.dropdown-end {
-    right: -32px;
-}
-
-.header-menu-item-dropdown a {
-    display: block;
-    padding: 0;
-    margin: 8px 0;
 }
 
 .header-menu-item svg {
@@ -692,6 +662,10 @@ button:hover {
 }
 
 @media only screen and (max-width: 1430px) {
+    .header {
+        padding: 20px calc(calc(100% - 80%) / 2) !important;
+    }
+
     .main {
         width: 80% !important;
     }
@@ -706,6 +680,10 @@ button:hover {
 }
 
 @media only screen and (max-width: 1100px) {
+    .header {
+        padding: 20px calc(calc(100% - 90%) / 2) !important;
+    }
+
     .main {
         width: 90% !important;
     }
@@ -740,8 +718,17 @@ button:hover {
         display: block;
     }
 
-    .header-menu-item {
-        margin-left: 0px;
+    .header-menu {
+        display: none;
+    }
+
+    .alert-text {
+        flex-direction: initial;
+        align-items: center;
+    }
+
+    .alert-text-states {
+        display: none;
     }
 }
 
@@ -758,11 +745,24 @@ button:hover {
         grid-template-columns: 1fr;
     }
 
+    .main-more-news {
+        margin-bottom: 20px;
+    }
+
     .footer-content {
         display: block;
     }
 
     .footer-item {
         border-right: none !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-services-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-more-content {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
