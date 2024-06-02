@@ -24,6 +24,10 @@ This is a redesign concept made by @what-question-mark on Github
         --brand-main: #2461e5;
         --brand-dark: #001f43;
     
+        --important-warning: hsl(45, 100%, 69%);
+        --important-warning-dark: hsl(45, 100%, 59%);
+        --important-warning-text: #001f43;
+    
         --alert-warning: #ffd860;
         --alert-warning-dark: #ffcb2d;
         --alert-warning-text: #001f43;
@@ -103,7 +107,6 @@ button:hover {
 .header {
     display: flex;
     justify-content: space-between;
-    height: 105px;
     background-color: var(--brand-main);
     padding: 20px 40px;
 }
@@ -116,11 +119,6 @@ button:hover {
 
 .header-logo-img {
     height: 65px;
-}
-
-.header-menu {
-    display: flex;
-    justify-content: space-between;
 }
 
 .header-menu {
@@ -697,6 +695,7 @@ button:hover {
     .main {
         width: 80% !important;
     }
+
     .main-other {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -733,5 +732,37 @@ button:hover {
 
     .today-more {
         grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .header {
+        display: block;
+    }
+
+    .header-menu-item {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-today-content {
+        grid-template-columns: 1fr;
+    }
+
+    .main-other, .main-services-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-more {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        display: block;
+    }
+
+    .footer-item {
+        border-right: none !important;
     }
 }
