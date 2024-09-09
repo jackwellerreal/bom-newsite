@@ -1,18 +1,16 @@
 /*
-This is a redesign concept made by @what-question-mark on Github
+This is a redesign concept made by @jackwellerreal on Github
 */
 
 setTodayWeather("brisbane"); // Make sure it is all in lower case
 setTodayCities();
 
 async function setTodayWeather(city) {
-    const weatherres = await fetch(
-        `./data/${city}.json`
-    );
+    const weatherres = await fetch(`./data/${city}.json`);
     const weather = await weatherres.json();
 
     // const time = moment();
-    const time = moment(weather.location.localtime, 'YYYY-MM-DD HH:ss');
+    const time = moment(weather.location.localtime, "YYYY-MM-DD HH:ss");
     const currentTime = time.format("HH:mm, dddd D MMMM");
 
     document.getElementById("today-time").innerHTML = currentTime;
@@ -58,9 +56,7 @@ async function setTodayCities() {
     ];
 
     for (let city of cities) {
-        const weatherres = await fetch(
-            `./data/${city}.json`
-        );
+        const weatherres = await fetch(`./data/${city}.json`);
         const weather = await weatherres.json();
 
         document.getElementById(
@@ -69,9 +65,8 @@ async function setTodayCities() {
         document.getElementById(
             `today-other-${city}-wind`
         ).innerHTML = `${weather.current.wind_kph}kph (${weather.current.wind_dir})`;
-        document.getElementById(
-            `today-other-${city}-condition`
-        ).innerHTML = weather.current.condition.text;
+        document.getElementById(`today-other-${city}-condition`).innerHTML =
+            weather.current.condition.text;
         document.getElementById(
             `today-other-${city}-precipitation`
         ).innerHTML = `${weather.current.precip_mm}mm`;

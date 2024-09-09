@@ -1,5 +1,5 @@
 /*
-This is a redesign concept made by @what-question-mark on Github
+This is a redesign concept made by @jackwellerreal on Github
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
@@ -21,18 +21,18 @@ This is a redesign concept made by @what-question-mark on Github
         --hover-filter: #0000001f;
 
         --background: #ffffff;
-    
+
         --brand-main: #2461e5;
         --brand-dark: #0c2762;
-    
+
         --important-warning: hsl(45, 100%, 69%);
         --important-warning-dark: hsl(45, 100%, 59%);
         --important-warning-text: #001f43;
-    
+
         --alert-warning: #ffd860;
         --alert-warning-dark: #ffcb2d;
         --alert-warning-text: #001f43;
-    
+
         --footer: #f7f7f7;
         --footer-dark: #cccccc;
     }
@@ -44,17 +44,17 @@ This is a redesign concept made by @what-question-mark on Github
         --color-minor: #999999;
         --color-header: #000000;
 
-        --hover-filter: #ffffff1F;
+        --hover-filter: #ffffff1f;
 
         --background: #000000;
-    
+
         --brand-main: #001f43;
         --brand-dark: #00336d;
-    
+
         --alert-warning: #d6a200;
         --alert-warning-dark: #b48700;
         --alert-warning-text: #001f43;
-    
+
         --footer: #080808;
         --footer-dark: #333333;
     }
@@ -72,7 +72,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
-    color: var(--color)
+    color: var(--color);
 }
 
 img {
@@ -91,14 +91,14 @@ img {
 }
 
 button {
-	background: var(--brand-main);
+    background: var(--brand-main);
     color: #ffffff;
     margin-top: 16px;
     padding: 8px;
     border-radius: var(--border-radius-small);
-	cursor: pointer;
-	border: none;
-	outline: inherit;
+    cursor: pointer;
+    border: none;
+    outline: inherit;
     transition: var(--transition);
 }
 
@@ -284,7 +284,7 @@ button:hover {
 .main-other-item {
     padding: 8px;
     border-radius: var(--border-radius-big);
-    transition:  var(--transition);
+    transition: var(--transition);
 }
 
 .main-other-item:hover {
@@ -332,7 +332,7 @@ button:hover {
 
 .main-services-item h1 {
     font-size: 24px;
-    color: #fff;    
+    color: #fff;
 }
 
 .main-more {
@@ -673,7 +673,7 @@ button:hover {
     }
 
     .footer {
-        padding: 20px calc(calc(100% - 80%) / 2)
+        padding: 20px calc(calc(100% - 80%) / 2);
     }
 }
 
@@ -683,7 +683,7 @@ button:hover {
     }
 
     .footer {
-        padding: 20px calc(calc(100% - 90%) / 2)
+        padding: 20px calc(calc(100% - 90%) / 2);
     }
 
     .footer-maps img {
@@ -731,7 +731,8 @@ button:hover {
         grid-template-columns: 1fr;
     }
 
-    .main-other, .main-services-content {
+    .main-other,
+    .main-services-content {
         grid-template-columns: repeat(2, 1fr);
     }
 
